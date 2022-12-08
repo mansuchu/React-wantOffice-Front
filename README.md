@@ -8,13 +8,13 @@
 
 ```
 npm install 
-npm install @fullcalendar/react @fullcalendar/core @fullcalendar/daygrid
-npm install style-loader css-loader sass-loader node-sass --save 
-npm install  @fullcalendar/google-calendar
-npm install @fullcalendar/interaction
+npm install --save @fullcalendar/react @fullcalendar/core @fullcalendar/daygrid
+npm install style-loader css-loader sass-loader node-sass --save
+npm install --save @fullcalendar/google-calendar
+npm install --save @fullcalendar/interaction
 npm install moment
-npm install react-datepicker
-npm install date-fns
+npm install react-datepicker --save
+npm install date-fns --save
 npm install jwt-decode
 npm install react-router-dom
 npm install redux
