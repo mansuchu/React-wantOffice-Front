@@ -34,6 +34,10 @@ import DeptLayout from "./layouts/management/DeptLayout";
 import Position from "./pages/admin/position/Position";
 import PositionLayout from "./layouts/management/PositionLayout";
 
+import ApprovalLayout from "./layouts/approval/ApprovalLayout";
+import ApprovalMain from "./pages/approval/ApprovalMain";
+import ApproverList from "./pages/approval/ApproverList"
+
 import CardLayout from "./layouts/card/CardLayout";
 import CustomerList from "./pages/card/CustomerList";
 import Card from "./pages/card/Card";
@@ -93,6 +97,11 @@ function App() {
           <Route index element={ <Position/>}/>
         </Route>
         <Route path="*" element={ <Error/> }/>
+
+        <Route path="/approval" element = { <ApprovalLayout/>}>
+        <Route index element={ <ApprovalMain/>}/>
+        <Route path="approver" element={ <ApproverList/>}/>
+        </Route>
 
         <Route path="/card" element={ <CardLayout/> }>
           <Route index element={ <Card/> }/>
